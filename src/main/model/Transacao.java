@@ -1,4 +1,4 @@
-package br.ufmg.pedagio.model;
+package model;
 
 import java.math.BigDecimal;
 import java.util.Objects;

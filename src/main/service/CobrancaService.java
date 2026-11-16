@@ -1,9 +1,9 @@
-package br.ufmg.pedagio.service;
+package service;
 
-import br.ufmg.pedagio.model.CategoriaVeiculo;
-import br.ufmg.pedagio.model.StatusCobranca;
-import br.ufmg.pedagio.model.Tag;
-import br.ufmg.pedagio.model.Tarifa;
+import model.CategoriaVeiculo;
+import model.StatusCobranca;
+import model.Tag;
+import model.Tarifa;
 import java.math.BigDecimal;
 import java.util.Map;
 import java.util.Objects;

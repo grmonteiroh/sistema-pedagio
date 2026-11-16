@@ -1,6 +1,6 @@
-package br.ufmg.pedagio.service;
+package service;
 
-import br.ufmg.pedagio.model.Transacao;
+import model.Transacao;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

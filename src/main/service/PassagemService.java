@@ -1,6 +1,6 @@
-package br.ufmg.pedagio.service;
+package service;
 
-import br.ufmg.pedagio.model.*;
+import model.*;
 import java.time.LocalDateTime;
 import java.util.Objects;
 

@@ -1,6 +1,6 @@
-package br.ufmg.pedagio.service;
+package service;
 
-import br.ufmg.pedagio.model.*;
+import model.*;
 import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.*;

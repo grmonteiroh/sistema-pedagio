@@ -19,6 +19,8 @@
         </dependency>
     </dependencies>
     <build>
+        <sourceDirectory>src/main</sourceDirectory>
+        <testSourceDirectory>src/test</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -34,7 +36,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.5.0</version>
-                <configuration><mainClass>br.ufmg.pedagio.Main</mainClass></configuration>
+                <configuration><mainClass>Main</mainClass></configuration>
             </plugin>
         </plugins>
     </build>

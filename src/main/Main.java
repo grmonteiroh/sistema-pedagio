@@ -1,7 +1,5 @@
-package br.ufmg.pedagio;
-
-import br.ufmg.pedagio.model.*;
-import br.ufmg.pedagio.service.*;
+import model.*;
+import service.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 

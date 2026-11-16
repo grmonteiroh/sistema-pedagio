@@ -1,7 +1,7 @@
-package br.ufmg.pedagio.service;
+package service;
 
-import br.ufmg.pedagio.model.CategoriaVeiculo;
-import br.ufmg.pedagio.model.Veiculo;
+import model.CategoriaVeiculo;
+import model.Veiculo;
 import java.util.Objects;
 
 public class ClassificacaoService {

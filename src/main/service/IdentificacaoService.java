@@ -1,7 +1,7 @@
-package br.ufmg.pedagio.service;
+package service;
 
-import br.ufmg.pedagio.model.FormaIdentificacao;
-import br.ufmg.pedagio.model.Veiculo;
+import model.FormaIdentificacao;
+import model.Veiculo;
 import java.util.Objects;
 
 public class IdentificacaoService {

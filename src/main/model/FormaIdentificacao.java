@@ -1,4 +1,4 @@
-package br.ufmg.pedagio.model;
+package model;
 
 public enum FormaIdentificacao {
     TAG, PLACA_INFORMADA

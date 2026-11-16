@@ -68,7 +68,7 @@ Tarifas fictícias utilizadas:
 ## Arquitetura
 
 ```
-src/main/java/br/ufmg/pedagio/
+src/main/
 ├── Main.java        demonstração pelo terminal
 ├── model/           entidades e enums
 │   ├── Veiculo, Tag, Passagem, Tarifa, Transacao
@@ -98,11 +98,27 @@ As diferenças abaixo decorrem da escolha por uma implementação parcial, focad
 
 ## Testes automatizados (JUnit 5)
 
-Os 12 testes estão em `src/test/java` e cobrem:
+Os 30 testes estão em `src/test`, divididos em duas pastas:
+
+```
+src/test/
+├── service/     testes dos serviços e do fluxo completo
+└── unitario/    testes unitários de cada classe, incluindo casos de erro
+```
+
+`service/` (12 testes):
 
 - `CobrancaServiceTest` (8): tarifa de cada categoria; cobrança com saldo suficiente, exato e insuficiente; cobrança sem tag.
 - `PassagemServiceTest` (3): fluxo completo com tag, fluxo sem tag e 20 passagens consecutivas sem perda de registros (RNF04).
 - `TransacaoServiceTest` (1): registro e consulta de transações, com lista protegida contra alteração externa.
+
+`unitario/` (18 testes):
+
+- `IdentificacaoServiceTest` (4): identificação por tag ou por placa; tag sem saldo continua identificada por tag; veículo nulo.
+- `ClassificacaoServiceTest` (5): teste parametrizado para as quatro categorias; veículo nulo.
+- `TagTest` (5): débito com saldo suficiente e insuficiente, débitos sucessivos, débito inválido e criação de tag inválida.
+- `CobrancaServiceValidacaoTest` (2): categoria nula e tarifa nula.
+- `TransacaoServiceValidacaoTest` (2): tentativa de limpar a lista não apaga registros; transação nula não é registrada.
 
 ## Documentação das sprints anteriores
 
